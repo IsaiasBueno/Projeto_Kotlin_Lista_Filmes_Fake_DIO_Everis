@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Projeto_Kotlin_Lista_Filmes_Fake_DIO_Everis"
