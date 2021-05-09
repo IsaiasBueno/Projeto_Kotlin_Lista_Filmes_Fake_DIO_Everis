@@ -1,4 +1,4 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.model
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

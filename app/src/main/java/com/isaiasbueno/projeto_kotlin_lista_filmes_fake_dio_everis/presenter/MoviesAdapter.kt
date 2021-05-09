@@ -1,11 +1,11 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.view
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.presenter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.R
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.model.Movie
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.domain.Movie
 import kotlinx.android.synthetic.main.movie_item_layout.view.*
 
 class MoviesAdapter(private val moviesList: List<Movie>): RecyclerView.Adapter<MoviesViewHolder>() {

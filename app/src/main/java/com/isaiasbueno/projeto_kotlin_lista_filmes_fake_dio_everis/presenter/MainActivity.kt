@@ -1,12 +1,12 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.view
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.R
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.model.Movie
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.viewmodel.MovieListViewModel
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.domain.Movie
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.framework.viewmodel.MovieListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

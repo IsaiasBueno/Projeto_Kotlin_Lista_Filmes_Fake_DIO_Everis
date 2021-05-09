@@ -1,6 +1,6 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.api
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.framework.api
 
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.model.Movie
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.domain.Movie
 import retrofit2.Call
 import retrofit2.http.GET
 

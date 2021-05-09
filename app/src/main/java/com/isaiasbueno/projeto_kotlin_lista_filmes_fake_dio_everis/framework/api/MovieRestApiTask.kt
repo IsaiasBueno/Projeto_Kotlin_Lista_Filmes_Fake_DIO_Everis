@@ -1,4 +1,4 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.api
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.framework.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

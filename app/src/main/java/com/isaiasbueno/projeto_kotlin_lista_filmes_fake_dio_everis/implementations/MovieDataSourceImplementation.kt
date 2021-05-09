@@ -1,10 +1,11 @@
-package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.repository
+package com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.implementations
 
 import android.util.Log
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.api.MovieRestApiTask
-import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.model.Movie
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.framework.api.MovieRestApiTask
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.data.MovieDataSource
+import com.isaiasbueno.projeto_kotlin_lista_filmes_fake_dio_everis.domain.Movie
 
-class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
+class MovieDataSourceImplementation(private val movieRestApiTask: MovieRestApiTask): MovieDataSource {
 
     companion object {
         const val TAG = "MovieRepository"
@@ -13,8 +14,7 @@ class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
     private val movieList = arrayListOf<Movie>()
 
 
-    fun getAllMovies(): List<Movie> {
-
+    override fun getAllMovies(): List<Movie> {
         val request = movieRestApiTask.retrofitApi().getAllMovies().execute()
 
         if (request.isSuccessful) {
@@ -29,6 +29,5 @@ class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
 
         return movieList
     }
-
 
 }
